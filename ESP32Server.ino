@@ -13,7 +13,7 @@
 #include <OneWire.h>
 #include <DallasTemperature.h>
 
-#define FIREBASE_HOST "*****************" //firebase info
+#define FIREBASE_HOST "****************" //firebase info
 #define FIREBASE_AUTH "**************************" //firebase info
 
 const char* ssid = "********"; //wifi info
