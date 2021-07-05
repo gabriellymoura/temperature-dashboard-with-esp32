@@ -1,0 +1,233 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+.main{
+  display: inline-flex;
+}
+
+.wrapper-left{
+  background: #39A0ED;
+  width: 176px;
+  height: 615px;
+}
+
+.wrapper-right{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+
+  width: 1110px;
+  height: 615px;
+}
+
+.card-temp{
+  width: 296px;
+  height: 377px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+
+  /* margin-left: 32px; */
+  margin-right: 64px;
+}
+.card-grafico{
+  width: 558px;
+  height: 377px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+}
+.grafico{
+  width: 508px;
+  height: 327px;
+}
+
+.text{
+  margin: 13px 32px 26px;
+}
+
+.title{
+  font-family: Suez One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 31px;
+
+  color: #32322C;
+
+  margin-bottom: 17px;
+}
+.description{
+  font-family: Suez One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 17px;
+
+  color: #32322C;
+}
+.info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 20px;
+}
+.info  div p{
+  font-family: Suez One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 13px;
+
+  color: #32322C;
+
+  padding-bottom: 6px;
+}
+.temperature{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: Suez One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+
+  color: #32322C;
+}
+
+.temperature span{
+  font-family: Suez One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 74px;
+  line-height: 84px;
+
+  color: #4C6085;
+}
+
+.local{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.local p{
+  font-family: Suez One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 9px;
+  line-height: 12px;
+  text-align: center;
+
+  color: #32322C;
+}
+
+.content{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.temp-asfalto{
+  position: absolute;
+  width: 73px;
+  height: 26px;
+
+  font-family: Suez One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 14px;
+
+  color: #32322C;
+}
+
+.header-temperatura-asfalto{
+  display: flex;
+  margin-left: 10px;
+  margin-top: 20px;
+
+  font-family: Suez One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 14px;
+
+  color: #32322C
+}
+.header-temperatura-asfalto p{
+  margin-top: 5px;
+  margin-left: 10px;
+  font-family: Suez One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 14px;
+
+  color: #32322C;
+}
+
+.navegacao-dashboard{
+  display: flex;
+  margin-top: 50px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  width: 200px;
+  height: 36px;
+  align-items: center;
+}
+
+.navegacao-dashboard p{
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 35px;
+  width: 44px;
+  height: 15px;
+
+  font-family: Suez One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 13px;
+
+  color: #39A0ED;
+}
+.imagem img{
+ width: 150px;
+ display: flex;
+ margin-top:390px;
+}
+
+.development-by{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  
+  font-family: Suez One;
+  color: #32322C;
+  font-size: 10px;
+}
+.development-by p a{
+  text-decoration: none;
+  color: #39A0ED;
+  
+
+  font-family: Suez One;
+}

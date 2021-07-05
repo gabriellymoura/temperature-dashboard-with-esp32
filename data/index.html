@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">  <title>TDashboard Temperatura</title>
+
+  <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
+  <script type="text/javascript">
+    jQuery(window).load(function($){
+      atualizaRelogio();
+    });
+  </script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+  <div class="main">
+    <div class="wrapper-left">
+      <div class="header-temperatura-asfalto"> 
+        <i class="fas fa-road" style="color: #32322C; font-size: 40px;"></i>
+        <p class="description-header">Temperatura Asfalto</p>
+      </div>
+
+      <div class="navegacao-dashboard">
+        <i class="fas fa-thermometer-three-quarters" style="color: #39A0ED; font-size: 20px; margin-left: 10px; margin-top: 2px;"></i>
+        <p class="dashboard-text">Dashboard</p>
+      </div>
+      <div class="imagem">
+        <img src="https://lh3.googleusercontent.com/proxy/cSuxQxyPORZKx8PT8OuYR1D7oKjpevHStDq8KDgp4zlYJH9j14xnkXdOcRMmyBMbg1_Kohjlvp791OEKNKiUhrZSs1Mr5KAnfWKsjyOBmmtvYrakds21IJVX5_0"/>
+      </div>
+    </div>
+    <div class="wrapper-right">
+      <div class="text">
+        <p class="title">Bem vindo!</p>
+        <p class="description">Temperatura do asfalto em tempo real </p>
+      </div>
+      <div class="content">
+        <div class="card-temp">
+          <div class="info">
+            <i class="fas fa-info-circle" style="color: #4C6085; font-size: 40px"></i>
+            <div>
+              <p>Hoje</p>
+              <p id="hora"></p>
+              <p id="data"></p>
+            </div>
+          </div>
+          <div class="temperature">
+            <!-- <span>%TEMP_VALUE%</span> -->
+            <span id="temp">%TEMP_VALUE%</span>
+            &degC
+          </div>
+          <div class='local'>
+            <i class="fas fa-road" style="color: #32322C; font-size: 40px;"></i>
+            <p>
+              São Luis
+              <br>
+              Maranhão
+            </p>
+
+          </div>
+        </div>
+        <div class="card-grafico"id="chart-temperature">
+          <div class="grafico">
+          </div>
+        </div>
+
+      </div>
+      <div class="development-by">
+        <p>
+          Desenvolvido por:
+        </p>
+        <p>
+          <a href="https://www.linkedin.com/in/gabrielly-moura/"> Gabrielly Moura</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>	
+</html>
