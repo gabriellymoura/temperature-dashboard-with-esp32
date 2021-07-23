@@ -23,16 +23,8 @@
       type="image/x-icon"
       href="/images/road-solid.svg"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Home Dashboard</title>
-
-    <script src="https://code.jquery.com/jquery-1.11.2.js"></script>
-    <script type="text/javascript">
-      jQuery(window).load(function ($) {
-        atualizaRelogio();
-      });
-    </script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <link rel="stylesheet" href="style-historic.css" />
+    <title>Historico</title>
   </head>
   <body>
     <div class="main">
@@ -45,15 +37,16 @@
         <div class="navegacao-dashboard">
           <i class="fas fa-thermometer-three-quarters"></i>
           <p class="dashboard-text">
-            <a href="#">Dashboard</a>
+            <a href="./index.html">Dashboard</a>
           </p>
         </div>
         <div class="navegacao-tabela">
           <i class="fas fa-table"></i>
           <p class="dashboard-text">
-            <a class="history-text" href="./historic.html">Histórico</a>
+            <a class="history-text" href="#">Histórico</a>
           </p>
         </div>
+
         <div class="imagem">
           <img
             src="https://www.uema.br/wp-content/uploads/2019/06/UEMA_logo_oficial-4-351x185@2x.png"
@@ -62,47 +55,13 @@
       </div>
       <div class="wrapper-right">
         <div class="text">
-          <p class="title">Bem vindo!</p>
-          <p class="description">Temperatura do asfalto em tempo real</p>
+          <p class="title">Database</p>
+          <p class="description">Histórico de Temperatura no Banco de dados</p>
         </div>
         <div class="content">
-          <div class="card-temp">
-            <div class="info">
-              <i class="fas fa-info-circle"></i>
-              <div>
-                <p>Hoje</p>
-                <p id="hora"></p>
-                <p id="data"></p>
-              </div>
-            </div>
-            <div class="temperature">
-              <!-- <span>%TEMP_VALUE%</span> -->
-              <span id="temp">27</span>
-              &degC
-            </div>
-            <div class="local">
-              <i class="fas fa-road"></i>
-              <p>
-                São Luis
-                <br />
-                Maranhão
-              </p>
-            </div>
-          </div>
-          <div class="card-grafico" id="chart-temperature">
-            <div class="grafico"></div>
-          </div>
-        </div>
-        <div class="development-by">
-          <p>Desenvolvido por:</p>
-          <p>
-            <a href="https://www.linkedin.com/in/gabrielly-moura/">
-              Gabrielly Moura &copy</a
-            >
-          </p>
+          <div class="card-table">teste</div>
         </div>
       </div>
     </div>
   </body>
-  <script src="script.js"></script>
 </html>

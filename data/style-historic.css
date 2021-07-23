@@ -1,19 +1,19 @@
-*{
-  padding:0;
-  margin:0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.main{
+.main {
   display: inline-flex;
 }
 
-.wrapper-left{
-  background: #39A0ED;
+.wrapper-left {
+  background: #39a0ed;
   width: 176px;
   height: 100vh;
 }
 
-.wrapper-right{
+.wrapper-right {
   position: relative;
 
   display: flex;
@@ -24,149 +24,43 @@
   height: 100vh;
 }
 
-.card-temp{
-  width: 18.5rem;
-  height: 24rem;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-  border-radius: 16px;
-
-  /* margin-left: 32px; */
-  margin-right: 4rem
-}
-.card-grafico{
-  width: 558px;
-  height: 377px;
-
-  background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 16px;
-}
-.grafico{
-  width: 508px;
-  height: 327px;
-}
-
-.text{
+.text {
   margin: 13px 32px 26px;
 }
 
-.title{
+.title {
   font-family: Suez One;
   font-style: normal;
   font-weight: normal;
   font-size: 34px;
   line-height: 31px;
 
-  color: #32322C;
+  color: #32322c;
 
   margin-bottom: 17px;
 }
-.description{
-  font-family: Suez One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 23px;
-  line-height: 17px;
-
-  color: #32322C;
-}
-.info{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-
-  padding: 20px;
-}
-.info  div p{
-  font-family: Suez One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 13px;
-
-  color: #32322C;
-
-  padding-bottom: 6px;
-}
-.info i{
-  color: #4C6085;
-  font-size: 40px;
-}
-.temperature{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+.description {
   font-family: Suez One;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 17px;
 
-  color: #32322C;
+  color: #32322c;
 }
 
-.temperature span{
-  font-family: Suez One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 74px;
-  line-height: 84px;
-
-  color: #4C6085;
-}
-
-.local{
+.card-table {
+  width: 66.5rem;
+  height: 31rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.local p{
-  font-family: Suez One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 9px;
-  line-height: 12px;
-  text-align: center;
-
-  color: #32322C;
-}
-.local i{
-  color: #32322C; 
-  font-size: 40px;
-}
-
-.content{
-  display: flex;
-  width: 100%;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  border-radius: 16px;
+  margin-left: 32px;
 }
 
-.temp-asfalto{
-  position: absolute;
-  width: 73px;
-  height: 26px;
-
-  font-family: Suez One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 11px;
-  line-height: 14px;
-
-  color: #32322C;
-}
-
-.header-temperatura-asfalto{
+.header-temperatura-asfalto {
   display: flex;
   margin-left: 10px;
   margin-top: 20px;
@@ -177,9 +71,9 @@
   font-size: 20px;
   line-height: 14px;
 
-  color: #32322C;
+  color: #32322c;
 }
-.header-temperatura-asfalto p{
+.header-temperatura-asfalto p {
   margin-top: 5px;
   margin-left: 10px;
   font-family: Suez One;
@@ -188,31 +82,31 @@
   font-size: 15px;
   line-height: 14px;
   margin-bottom: 50px;
-  color: #32322C;
+  color: #32322c;
 }
 
-.navegacao-dashboard{
+.navegacao-dashboard {
   display: flex;
   margin-top: 10px;
-  background-color: #FFFFFF;
+  background-color: #39a0ed;
   border-radius: 10px 0px 0px 10px;
   width: 100%;
   height: 36px;
   align-items: center;
 }
-.navegacao-dashboard a{
+.navegacao-dashboard a {
   text-decoration: none;
-  color: #39A0ED;
+  color: #fff;
 }
 
-.navegacao-dashboard i{
-  color: #39A0ED; 
-  font-size: 20px; 
-  margin-left: 10px; 
+.navegacao-dashboard i {
+  color: #fff;
+  font-size: 20px;
+  margin-left: 10px;
   margin-top: 2px;
 }
 
-.navegacao-dashboard p{
+.navegacao-dashboard p {
   position: absolute;
   margin-top: 7px;
   margin-left: 35px;
@@ -225,30 +119,44 @@
   font-size: 15px;
   line-height: 13px;
 
-  color: #39A0ED;
+  color: #fff;
 }
 
-.navegacao-tabela{
+.navegacao-dashboard:hover {
+  background-color: #fff;
+  transition: 0.5s;
+}
+.navegacao-dashboard:hover .fas {
+  color: #39a0ed;
+}
+.navegacao-dashboard:hover p {
+  color: #39a0ed;
+}
+.navegacao-dashboard:hover a {
+  color: #39a0ed;
+}
+
+.navegacao-tabela {
   display: flex;
   margin-top: 10px;
   border-radius: 10px 0px 0px 10px;
-  background-color: #39A0ED;
+  background-color: #fff;
   width: 100%;
   height: 36px;
   align-items: center;
 }
-.navegacao-tabela i{
-  color: #fff; 
-  font-size: 20px; 
-  margin-left: 10px; 
+.navegacao-tabela i {
+  color: #39a0ed;
+  font-size: 20px;
+  margin-left: 10px;
   margin-top: 2px;
 }
-.navegacao-tabela a{
+.navegacao-tabela a {
   text-decoration: none;
-  color: #fff;
+  color: #39a0ed;
 }
 
-.navegacao-tabela p{
+.navegacao-tabela p {
   position: absolute;
   margin-top: 7px;
   margin-left: 38px;
@@ -260,71 +168,57 @@
   font-weight: normal;
   font-size: 15px;
   line-height: 13px;
-  color: #fff;
-}
-.navegacao-tabela:hover {
-  background-color: #fff;
-  transition: 0.5s ; 
-}
-.navegacao-tabela:hover .fas{
-  color: #39A0ED;
-}
-.navegacao-tabela:hover p{
-  color: #39A0ED;
-}
-.navegacao-tabela:hover a{
-  color: #39A0ED;
+  color: #39a0ed;
 }
 
-.imagem{
+.imagem {
   position: absolute;
   bottom: 0;
 }
-.imagem img{
+.imagem img {
   width: 150px;
 }
 
-.development-by{
+.development-by {
   width: 100%;
   display: flex;
   justify-content: center;
-  
+
   font-family: Suez One;
-  color: #32322C;
+  color: #32322c;
   font-size: 10px;
 }
-.development-by p a{
+.development-by p a {
   text-decoration: none;
-  color: #39A0ED;
-  
+  color: #39a0ed;
 
   font-family: Suez One;
 }
 
-@media  (max-width: 768px){
-  .main{
+@media (max-width: 768px) {
+  .main {
     display: inline-flex;
     flex-direction: column;
   }
-  .wrapper-left{
+  .wrapper-left {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: #39A0ED;
+    background: #39a0ed;
     width: 655px;
     height: 100px;
   }
-  .navegacao-dashboard{
-    display:none;
+  .navegacao-dashboard {
+    display: none;
     background-color: none;
   }
-  
+
   .imagem {
     position: relative;
     right: 0;
     top: 0;
   }
-  .imagem img{
+  .imagem img {
     width: 150px;
   }
   .content {
@@ -333,7 +227,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .wrapper-right{
+  .wrapper-right {
     width: 655px;
     position: relative;
     display: flex;
@@ -341,48 +235,48 @@
     justify-content: space-evenly;
     height: 100vh;
   }
-  .card-temp{
+  .card-table {
     width: 30.5rem;
     height: 33rem;
     display: flex;
     flex-direction: column;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     border-radius: 16px;
     margin-bottom: 18px;
   }
-  .card-temp i{
+  .card-temp i {
     font-size: 4rem;
   }
-  .info  div p{
+  .info div p {
     font-size: 1.3rem;
   }
-  .local p{
+  .local p {
     font-size: 1rem;
   }
-  .local i{
+  .local i {
     font-size: 4rem;
   }
 
-  .temperature span{
+  .temperature span {
     font-size: 8rem;
   }
-  .text{
-    margin: 55px 32px 42px
+  .text {
+    margin: 55px 32px 42px;
   }
 }
 
-@media (max-width: 414px){
-  .main{
+@media (max-width: 414px) {
+  .main {
     display: inline-flex;
     flex-direction: column;
   }
-  .wrapper-left{
+  .wrapper-left {
     display: flex;
     flex-direction: row;
     align-items: center;
 
-    background: #39A0ED;
+    background: #39a0ed;
 
     width: 414px;
     height: 100px;
@@ -390,23 +284,21 @@
   .header-temperatura-asfalto p {
     line-height: 14px;
   }
-  .navegacao-dashboard{
-    display:none;
+  .navegacao-dashboard {
+    display: none;
+    background-color: none;
+  }
+  .navegacao-tabela {
+    display: none;
     background-color: none;
   }
 
-  .navegacao-tabela{
-    display:none;
-    background-color: none;
-  }
-  
-  
   .imagem {
     position: relative;
     right: 0;
     top: 0;
   }
-  .imagem img{
+  .imagem img {
     width: 150px;
   }
   .content {
@@ -415,7 +307,7 @@
     flex-direction: column;
     align-items: center;
   }
-  .wrapper-right{
+  .wrapper-right {
     width: 414px;
     position: relative;
     display: flex;
@@ -423,39 +315,38 @@
     justify-content: space-evenly;
     height: 140vh;
   }
-  .card-temp{
+  .card-table {
     width: 18.5rem;
     height: 25rem;
     display: flex;
     flex-direction: column;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     border-radius: 16px;
     margin-bottom: 17px;
   }
-  .card-temp i{
+  .card-temp i {
     font-size: 3rem;
   }
-  .info  div p{
+  .info div p {
     font-size: 1rem;
   }
-  .local p{
+  .local p {
     font-size: 0.7rem;
   }
-  .local i{
+  .local i {
     font-size: 3rem;
   }
-  .temperature span{
+  .temperature span {
     font-size: 6rem;
   }
-  .text{
-    margin: 55px 32px 42px
+  .text {
+    margin: 55px 32px 42px;
   }
   .title {
     font-size: 1.5rem;
   }
-  .description{
+  .description {
     font-size: 1rem;
   }
 }
-
