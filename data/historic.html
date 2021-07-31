@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,7 +31,12 @@
       href="/images/road-solid.svg"
     />
     <link rel="stylesheet" href="style-historic.css" />
+
     <title>Historico</title>
+    <link
+      href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="main">
@@ -59,7 +71,130 @@
           <p class="description">Histórico de Temperatura no Banco de dados</p>
         </div>
         <div class="content">
-          <div class="card-table">teste</div>
+          <div class="card-table">
+            <table
+              id="minhaTabela"
+              class="table table-striped"
+              style="width: 100%"
+            >
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>E-mail</th>
+                  <th>Telefone</th>
+                  <th>Ação</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Vinicius Moura</td>
+                  <td>viniciusmouramail@gmail.com</td>
+                  <td>49 12345-68791</td>
+                  <td><a href="">Deletar</a></td>
+                </tr>
+                <tr>
+                  <td>José Andrade</td>
+                  <td>joseandrade@gmail.com</td>
+                  <td>32 9875-68791</td>
+                  <td><a href="">Deletar</a></td>
+                </tr>
+                <tr>
+                  <td>Rodrigo Costa</td>
+                  <td>rodrigocosta@gmail.com</td>
+                  <td>32 4564-68791</td>
+                  <td><a href="">Deletar</a></td>
+                </tr>
+                <tr>
+                  <td>Vinicius Moura</td>
+                  <td>viniciusmouramail@gmail.com</td>
+                  <td>49 12345-68791</td>
+                  <td><a href="">Deletar</a></td>
+                </tr>
+                <tr>
+                  <td>José Andrade</td>
+                  <td>joseandrade@gmail.com</td>
+                  <td>32 9875-68791</td>
+                  <td><a href="">Deletar</a></td>
+                </tr>
+                <tr>
+                  <td>Rodrigo Costa</td>
+                  <td>rodrigocosta@gmail.com</td>
+                  <td>32 4564-68791</td>
+                  <td><a href="">Deletar</a></td>
+                </tr>
+                <tr>
+                  <td>Vinicius Moura</td>
+                  <td>viniciusmouramail@gmail.com</td>
+                  <td>49 12345-68791</td>
+                  <td><a href="">Deletar</a></td>
+                </tr>
+                <tr>
+                  <td>José Andrade</td>
+                  <td>joseandrade@gmail.com</td>
+                  <td>32 9875-68791</td>
+                  <td><a href="">Deletar</a></td>
+                </tr>
+                <tr>
+                  <td>Rodrigo Costa</td>
+                  <td>rodrigocosta@gmail.com</td>
+                  <td>32 4564-68791</td>
+                  <td><a href="">Deletar</a></td>
+                </tr>
+                <tr>
+                  <td>Vinicius Moura</td>
+                  <td>viniciusmouramail@gmail.com</td>
+                  <td>49 12345-68791</td>
+                  <td><a href="">Deletar</a></td>
+                </tr>
+                <tr>
+                  <td>José Andrade</td>
+                  <td>joseandrade@gmail.com</td>
+                  <td>32 9875-68791</td>
+                  <td><a href="">Deletar</a></td>
+                </tr>
+                <tr>
+                  <td>Rodrigo Costa</td>
+                  <td>rodrigocosta@gmail.com</td>
+                  <td>32 4564-68791</td>
+                  <td><a href="">Deletar</a></td>
+                </tr>
+                <tr>
+                  <td>Vinicius Moura</td>
+                  <td>viniciusmouramail@gmail.com</td>
+                  <td>49 12345-68791</td>
+                  <td><a href="">Deletar</a></td>
+                </tr>
+                <tr>
+                  <td>José Andrade</td>
+                  <td>joseandrade@gmail.com</td>
+                  <td>32 9875-68791</td>
+                  <td><a href="">Deletar</a></td>
+                </tr>
+                <tr>
+                  <td>Rodrigo Costa</td>
+                  <td>rodrigocosta@gmail.com</td>
+                  <td>32 4564-68791</td>
+                  <td><a href="">Deletar</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+            <script src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+
+            <script>
+              $(document).ready(function () {
+                $("#minhaTabela").DataTable({
+                  language: {
+                    lengthMenu: "Mostrando _MENU_ registros por página",
+                    zeroRecords: "Nada encontrado",
+                    info: "Mostrando página _PAGE_ de _PAGES_",
+                    infoEmpty: "Nenhum registro disponível",
+                    infoFiltered: "(filtrado de _MAX_ registros no total)",
+                  },
+                });
+              });
+            </script>
+          </div>
         </div>
       </div>
     </div>
